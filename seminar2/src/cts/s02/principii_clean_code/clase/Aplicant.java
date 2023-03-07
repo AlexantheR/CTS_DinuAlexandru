@@ -1,5 +1,7 @@
 package cts.s02.principii_clean_code.clase;
 
+import java.util.Scanner;
+
 public abstract class Aplicant {
     protected static Integer punctajAcceptare = 80;
     protected String nume;
@@ -70,4 +72,9 @@ public abstract class Aplicant {
     }
 
     public abstract void afisareFinantare();
+
+    public void setDenumiriProiect(String[] denumiriProiect) {
+        this.denumiriProiect = denumiriProiect;
+    }
+
 }
