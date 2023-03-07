@@ -6,6 +6,7 @@ public abstract class Aplicant{
 	protected int varsta;
 	protected int punctaj;
 	protected int nrProiecte;
+
 	protected String[] denumiriProiect;
 	
 	
@@ -63,4 +64,5 @@ public abstract class Aplicant{
 		this.nrProiecte = nrProiecte;
 	}
 
+	public abstract void afisareFinantare();
 }
