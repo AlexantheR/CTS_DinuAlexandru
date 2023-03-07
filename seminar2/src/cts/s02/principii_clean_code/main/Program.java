@@ -21,6 +21,7 @@ public class Program {
             for (Aplicant angajat : listaAngajati){
                 System.out.println(angajat.toString());
                 angajat.afisareFinantare();
+                angajat.afisareStatut();
             }
 
         } catch (FileNotFoundException e) {
