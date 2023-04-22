@@ -1,6 +1,6 @@
 package simple_factory;
 
-public class Medic implements PersonalSpital {
+public class Medic implements PersonalSpital {  //simple factory
 
     private String nume;
 

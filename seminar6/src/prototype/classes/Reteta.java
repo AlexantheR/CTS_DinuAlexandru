@@ -9,15 +9,16 @@ public class Reteta implements Prototype {
     private Float gramajMedicament;
     private HashMap<String, Float> solutii;
 
-
-    public Reteta(String numeReteta, Float gramajMedicament, HashMap<String, Float> solutii) {
+    public Reteta(String numeReteta, Float gramajMedicament,
+                  HashMap<String, Float> solutii) {
         this.numeReteta = numeReteta;
         this.gramajMedicament = gramajMedicament;
         float suma = 0;
         for (Float valoare : solutii.values()) {
             suma += valoare;
         }
-        if (this.gramajMedicament > suma - 0.1 && this.gramajMedicament < suma + 0.1) {
+        if (this.gramajMedicament > suma - 0.1 &&
+                this.gramajMedicament < suma + 0.1) {
             this.solutii = solutii;
         } else {
             throw new IllegalArgumentException("Gramaj eronat!");

@@ -3,7 +3,7 @@ package singletonregistry.main;
 import singletonregistry.DomeniuWeb;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) {    //singleton registry
         DomeniuWeb domeniuWeb1 = DomeniuWeb.getDomeniu("seminar4.ro");
         DomeniuWeb domeniuWeb2 = DomeniuWeb.getDomeniu("seminar5.ro");
         DomeniuWeb domeniuWeb3 = DomeniuWeb.getDomeniu("seminar5.ro");

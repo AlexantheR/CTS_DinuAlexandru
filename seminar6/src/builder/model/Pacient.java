@@ -1,13 +1,14 @@
 package builder.model;
 
-public class Pacient {
+public class Pacient {  //builder
     private String nume;
     private boolean patRabatabil;
     private boolean micDejunInclus;
     private boolean papuciCamera;
     private boolean halatInterior;
 
-    protected Pacient(String nume, boolean patRabatabil, boolean micDejunInclus, boolean papuciCamera, boolean halatInterior) {
+    protected Pacient(String nume, boolean patRabatabil,
+                      boolean micDejunInclus, boolean papuciCamera, boolean halatInterior) {
         this.nume = nume;
         this.patRabatabil = patRabatabil;
         this.micDejunInclus = micDejunInclus;
@@ -20,18 +21,22 @@ public class Pacient {
     }
 
     protected void setPatRabatabil(boolean patRabatabil) {
+
         this.patRabatabil = patRabatabil;
     }
 
     protected void setMicDejunInclus(boolean micDejunInclus) {
+
         this.micDejunInclus = micDejunInclus;
     }
 
     protected void setPapuciCamera(boolean papuciCamera) {
+
         this.papuciCamera = papuciCamera;
     }
 
     protected void setHalatInterior(boolean halatInterior) {
+
         this.halatInterior = halatInterior;
     }
 

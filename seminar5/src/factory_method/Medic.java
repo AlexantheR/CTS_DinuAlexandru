@@ -1,6 +1,6 @@
 package factory_method;
 
-public class Medic implements PersonalSpital{
+public class Medic implements PersonalSpital{   //method factory
 
     private String nume;
 

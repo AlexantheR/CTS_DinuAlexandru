@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) {    //method factory
         Factory factoryMedici = new FactoryMedici();
         Factory factoryAsistenti = new FactoryAsistenti();
         Factory factoryBrancardieri = new FactoryBrancardieri();

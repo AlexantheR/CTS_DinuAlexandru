@@ -3,7 +3,7 @@ package singletonregistry;
 import java.util.HashMap;
 import java.util.Map;
 
-public class DomeniuWeb {
+public class DomeniuWeb {   //singleton registry
     private static Map<String, DomeniuWeb> domeniiWeb = new HashMap<>();
     private String nume;
     private int anInregistrare;
