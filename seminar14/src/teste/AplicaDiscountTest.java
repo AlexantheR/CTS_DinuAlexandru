@@ -1,13 +1,18 @@
 package teste;
 
+import categorii.Categorie1;
+import categorii.Categorie2;
 import dubluri.FakePersoana;
 import models.PachetTuristic;
+import org.junit.experimental.categories.Category;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class AplicaDiscountTestTest {
+public class AplicaDiscountTest {
 
+    @Tag("tag2")
     @Test
     void poatePrimiDiscount(){
         FakePersoana persoana = new FakePersoana();
@@ -17,6 +22,7 @@ class AplicaDiscountTestTest {
         assertEquals(800, pachetTuristic.getPret());
     }
 
+    @Tag("tag1")
     @Test
     void nuPoatePrimiDiscount(){
         FakePersoana persoana = new FakePersoana();

@@ -12,7 +12,7 @@ import clase.ExceptieVarsta;
 import clase.IPersoana;
 import clase.Persoana;
 
-class PersoanaTest {
+public class PersoanaTest {
 
     @Test
     public void testGetVarstaRight() {

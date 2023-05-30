@@ -1,14 +1,20 @@
 package teste;
 
+import categorii.Categorie1;
+import categorii.Categorie2;
 import dubluri.StubPersoana;
 import dubluri.StubPersoanaMinora;
 import models.IPersoana;
 import models.PachetTuristic;
+import org.junit.experimental.categories.Category;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PersoanaTestTest {
+public class PachetTuristicTest {
+
+    @Tag("tag1")
     @Test
     void poateRezervaraPachet(){
         StubPersoana persoana = new StubPersoana();
@@ -16,6 +22,7 @@ class PersoanaTestTest {
         assertTrue(pachet.poateRezerva());
     }
 
+    @Category(Categorie1.class)
     @Test
     void nuPoateRezervaPachet(){
         IPersoana persoana = new StubPersoanaMinora();
